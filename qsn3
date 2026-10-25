@@ -1,0 +1,33 @@
+Question Title: Build Pipeline Directory Tree
+
+Question Link:
+https://my.newtonschool.co/playground/code/r2ui5gw5lhqt?lecture_hash=n9ynhcuvkld8
+
+Solution:
+mkdir -p pipeline/stages/build
+mkdir -p pipeline/stages/test/unit/integration
+mkdir -p pipeline/env/staging
+mkdir -p pipeline/env/prod
+mkdir -p pipeline/artifacts/old
+
+chmod 750 pipeline/stages
+chmod 770 pipeline/artifacts
+chmod 700 pipeline/env
+
+cd pipeline/stages/build/
+touch app.py config.json NOTES.md
+echo "Build stage initialized." > NOTES.md
+
+cd ../..
+cd artifacts/old/
+touch build.log test.log deploy.log
+chmod 640 build.log test.log deploy.log
+
+Approach:
+1. make the required Directory structure
+2. change the permissions accordingly
+3. make the necessary files and write the appropriate content in them 
+4. change the permissions of the files as per the requirements
+
+Result:
+Pipeline Directory Tree formed with the required files, content and permissions
