@@ -12,4 +12,4 @@ Approach:
 2. write the content of the file containing password into EventApp/db_password.txt
 
 Result:
-password retrieved successfully
+password retrieved successfully.
