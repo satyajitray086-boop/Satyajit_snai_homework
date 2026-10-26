@@ -1,0 +1,19 @@
+**Question Title:** The Missing Project Credentials
+
+**Question Link:**  
+https://my.newtonschool.co/playground/code/7x83ezx6nimm
+
+**Solution:**
+```bash
+grep -r "DB_PASSWORD"
+cat EventApp/config/.env > EventApp/db_password.txt
+```
+
+**Approach:**
+
+1. Using the `grep` command with the recursive option to search for the location where `DB_PASSWORD` is defined.
+2. Extracting the contents of the `.env` file and saving them into `EventApp/db_password.txt`.
+
+**Result:**
+
+The required password information was retrieved from the configuration file and saved to `EventApp/db_password.txt` successfully.
