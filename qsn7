@@ -1,0 +1,30 @@
+**Question Title:** Data Breach Response
+
+**Question Link:**  
+https://my.newtonschool.co/playground/code/orlr84xpc3oo?lecture_hash=vifkrugjcwth
+
+**Solution:**
+```bash
+cd breach_response/
+chmod 777 evidence/ reports/incident_summary.txt
+cp evidence/log_dump.txt log_dump.txt
+mv evidence/ secure/
+echo "Breach confirmed" >> reports/incident_summary.txt
+echo "Forensics Complete" > secure/forensics_report.txt
+echo "Escalated to security team" >> reports/incident_summary.txt
+chmod 444 reports/incident_summary.txt
+chmod 555 secure/evidence/
+chmod 600 secure/forensics_report.txt
+```
+
+**Approach:**
+
+1. Temporarily modifying the permissions of the required files and directories to perform the necessary operations.
+
+2. Copying the log file, moving the evidence directory, and updating the incident summary and forensic report according to the question's requirements.
+
+3. Setting the final permissions for the incident summary, evidence directory, and forensic report to secure the files.
+
+**Result:**
+
+The `breach_response` directory was updated according to the given requirements, with the necessary files organized and their permissions restored to the specified levels.
