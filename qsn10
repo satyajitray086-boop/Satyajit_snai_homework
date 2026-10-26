@@ -1,0 +1,24 @@
+**Question Title:** The Internship Project Setup
+
+**Question Link:**  
+https://my.newtonschool.co/playground/code/5i36axzh7cl2?lecture_hash=mi7y4g3am46y
+
+**Solution:**
+```bash
+cd client-app
+git init
+echo "hehe" > index.html
+echo "haha" > app.js
+git add index.html app.js
+git commit -m "Initial client files"
+git remote add origin https://github.com/startup/client-app.git
+git push -u origin main
+git log
+```
+
+**Approach:**
+
+1. Moving into the `client-app` directory to begin the project setup.
+2. Initializing a new Git repository to track the project's changes.
+3. Creating the required files, staging them, and committing them with the appropriate commit message.
+4. Connecting the local repository to the remote.
