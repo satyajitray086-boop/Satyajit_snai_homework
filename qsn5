@@ -1,0 +1,20 @@
+**Question Title:** Deployment Project Permissions
+
+**Question Link:**  
+https://my.newtonschool.co/playground/code/3wz3wv7c89fo?lecture_hash=vifkrugjcwth
+
+**Solution:**
+```bash
+chmod 700 deployment/app/*.py
+chmod 770 deployment/datasets/ deployment/datasets/*
+chmod 644 deployment/docs/OVERVIEW.md
+chmod 755 deployment/bin/*.sh
+```
+
+**Approach:**
+
+1. Modifying the permissions of the specified files and directories according to the requirements mentioned in the question.
+
+**Result:**
+
+The permissions of the shared Deployment Project files and folders were successfully updated as required.
