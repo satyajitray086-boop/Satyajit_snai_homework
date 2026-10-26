@@ -1,24 +1,15 @@
-**Question Title:** The Internship Project Setup
+Question Title: The Missing Project Credentials
 
-**Question Link:**  
-https://my.newtonschool.co/playground/code/5i36axzh7cl2?lecture_hash=mi7y4g3am46y
+Question Link:
+https://my.newtonschool.co/playground/code/7x83ezx6nimm
 
-**Solution:**
-```bash
-cd client-app
-git init
-echo "hehe" > index.html
-echo "haha" > app.js
-git add index.html app.js
-git commit -m "Initial client files"
-git remote add origin https://github.com/startup/client-app.git
-git push -u origin main
-git log
-```
+Solution:
+grep -r "DB_PASSWORD"
+cat EventApp/config/.env > EventApp/db_password.txt
 
-**Approach:**
+Approach:
+1. find the location of the password using grep
+2. write the content of the file containing password into EventApp/db_password.txt
 
-1. Moving into the `client-app` directory to begin the project setup.
-2. Initializing a new Git repository to track the project's changes.
-3. Creating the required files, staging them, and committing them with the appropriate commit message.
-4. Connecting the local repository to the remote.
+Result:
+password retrieved successfully

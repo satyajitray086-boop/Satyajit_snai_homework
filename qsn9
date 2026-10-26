@@ -21,4 +21,4 @@ git log
 1. Moving into the `client-app` directory to begin the project setup.
 2. Initializing a new Git repository to track the project's changes.
 3. Creating the required files, staging them, and committing them with the appropriate commit message.
-4. Connecting the local repository to the remote
+4. Connecting the local repository to the remote.
