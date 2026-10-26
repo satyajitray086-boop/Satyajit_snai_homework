@@ -1,0 +1,24 @@
+**Question Title:** Simplify the Compilation Process
+
+**Question Link:**  
+https://my.newtonschool.co/playground/code/9kh4giios2j4?lecture_hash=t5qc0u6ap8tg
+
+**Solution:**
+```bash
+echo "#!bin/bash" > build.sh
+echo "gcc hello.c -o hello" >> build.sh
+chmod +x build.sh
+gcc hello.c -o hello
+./build.sh
+./hello
+```
+
+**Approach:**
+
+1. Adding the shebang line to the `build.sh` file to specify the script interpreter.
+2. Compiling `hello.c` into an executable file named `hello` using GCC.
+3. Giving execution permission to `build.sh`, then running the build script and executing the compiled program.
+
+**Result:**
+
+The program executes successfully and prints `Hello from C` on the terminal.
